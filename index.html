@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tensegrity Designer: form-finding, stability and build list</title>
+    <meta name="description" content="Free browser tool for tensegrity structures: T-prism, n-strut prisms, icosahedron, towers and X-modules. Form-finding by force density and dynamic relaxation, prestress stability check, member forces and a CSV build list with cut lengths. Interactive 3D." />
+    <meta name="keywords" content="tensegrity, tensegrity designer, form finding, force density method, dynamic relaxation, T-prism, tensegrity icosahedron, Snelson, self-stress, prestress stability, build list" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#f4f5f7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="canonical" href="https://hermes98761234.github.io/tensegrity-designer/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="apple-mobile-web-app-title" content="Tensegrity" />
+
+    <!-- Open Graph / Facebook / Telegram / Slack -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Tensegrity Designer" />
+    <meta property="og:url" content="https://hermes98761234.github.io/tensegrity-designer/" />
+    <meta property="og:title" content="Design and build tensegrity structures" />
+    <meta property="og:description" content="Form-finding, prestress stability, member forces and a printable build list with cut lengths, with an interactive 3D view." />
+    <meta property="og:image" content="https://hermes98761234.github.io/tensegrity-designer/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="A tensegrity prism with thick struts and tension-coloured cables, with the headline: design and build tensegrity structures." />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="uk_UA" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Design and build tensegrity structures" />
+    <meta name="twitter:description" content="Form-finding, stability check and build list for tensegrity structures. Runs in your browser." />
+    <meta name="twitter:image" content="https://hermes98761234.github.io/tensegrity-designer/og-image.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Tensegrity Designer",
+        "url": "https://hermes98761234.github.io/tensegrity-designer/",
+        "description": "Form-finds tensegrity structures by the force density method and dynamic relaxation, checks prestress stability, computes member forces and exports a build list with cut lengths.",
+        "applicationCategory": "DesignApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript, WebGL and Web Workers",
+        "inLanguage": ["en", "uk"],
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "author": { "@type": "Person", "name": "hermes98761234" }
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>This tool needs JavaScript.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
